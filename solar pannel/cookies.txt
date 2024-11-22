@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+techsometimes.com	TRUE	/	FALSE	1999999999	lp_session_guest	g-673f7758d33a1
+

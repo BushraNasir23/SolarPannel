@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 21 Nov 2024 10:09:28 at https://techsometimes.com/products/html/sunplus-html/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://techsometimes.com/products/html/sunplus-html/ -O1 "C:\Users\HP\Desktop\Internship\solarpannel\solar pannel" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:10:11	Error: 	"Not Found" (404) at link https://techsometimes.com/products/html/sunplus-html/assets/img/blog-details/v1/profile-img-3.png (from https://techsometimes.com/products/html/sunplus-html/blog-details.html)
+10:10:11	Error: 	"Not Found" (404) at link https://techsometimes.com/products/html/sunplus-html/assets/img/blog-details/v1/profile-img-1.png (from https://techsometimes.com/products/html/sunplus-html/blog-details.html)
+10:10:11	Error: 	"Not Found" (404) at link https://techsometimes.com/products/html/sunplus-html/assets/img/blog-details/v1/profile-img-4.png (from https://techsometimes.com/products/html/sunplus-html/blog-details.html)
+10:10:11	Error: 	"Not Found" (404) at link https://techsometimes.com/products/html/sunplus-html/assets/img/blog-details/v1/profile-img-2.png (from https://techsometimes.com/products/html/sunplus-html/blog-details.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 43 seconds : 106 links scanned, 101 files written (3882724 bytes overall) [2844241 bytes received at 66145 bytes/sec], 1608730 bytes transferred using HTTP compression in 44 files, ratio 25%, 21.2 requests per connection
+(4 errors, 0 warnings, 0 messages)
