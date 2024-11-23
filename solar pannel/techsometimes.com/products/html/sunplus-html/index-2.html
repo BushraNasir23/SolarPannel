@@ -374,12 +374,12 @@
                                 </div>
                                 <div class="section-title v1">
                                                
-                                                <form class="main-form contact-form mt-30 mt-xl-50 mt-xxl-60" onsubmit="sendEmail()">
+                                                <form class="main-form contact-form mt-30 mt-xl-50 mt-xxl-60" id="contact-form">
                                                  
                                                         <div class="form-box" style="display: flex; gap:10px" >
                                                             <p class="text-para-3 ">Average month electricity bills($)<p>
                                                                 
-                                                            <input type="text" id="name" name="bill"   style="color: white; background-color:black; height:50px; width:250px" required>
+                                                            <input type="text" id="name" name="avgbill"   style="color: white; background-color:black; height:50px; width:250px" required>
                                                         </div>
                                                         <br>
                                                        
@@ -388,7 +388,7 @@
                                                         
                                                         <div class="form-box" style="display: flex; gap:10px">
                                                             <p class="text-para-3 ">Annual Utility Rate Escalator %<p>
-                                                            <select name="subject">
+                                                            <select name="subject"id="bill">
 
                                                                 <option selected="selected" ></option>
                                                                 <option> .1</option>
@@ -404,7 +404,7 @@
                                                         
                                                         <div class="form-box" style="display: flex; gap:10px">
                                                             <p class="text-para-3 ">Numbers of years<p>
-                                                            <select name="subject">
+                                                            <select name="subject"  id="years">
                                                                 <option selected="selected"></option>
                                                                 <option> 1</option>
                                                                 <option> 2</option>
