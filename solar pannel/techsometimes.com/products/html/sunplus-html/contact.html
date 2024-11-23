@@ -77,7 +77,7 @@
                         </div>
                         <nav class="main-menu">
                             <ul>
-                                <li><a href="#">Home</a>
+                                <li><a href="index-2.html">Home</a>
                                     
                                 </li>
                                 
@@ -235,7 +235,7 @@
                                 <h6 class="text-para-3 text-upper text-semibold color-deepTealGreen">contact with us</h6>
                                 <h2 class="text-2 mt-10 font-family-3 text-bold">Our Contacts</h2>
                             </div>
-                            <form class="main-form contact-form mt-30 mt-xl-50 mt-xxl-60" action="https://techsometimes.com/products/html/sunplus-html/assets/mail.php" method="POST">
+                            <form class="main-form contact-form mt-30 mt-xl-50 mt-xxl-60" id="contact-form">
                                 <div class="group-form-box">
                                     <div class="form-box">
                                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -249,7 +249,7 @@
                                         <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                                     </div>
                                     <div class="form-box">
-                                        <select name="subject">
+                                        <select name="subject" id="subject">
                                             <option selected="selected">Choose Service</option>
                                             <option>Service 1</option>
                                             <option>Service 2</option>
@@ -260,7 +260,7 @@
                                 <div class="form-box">
                                     <textarea id="message" name="message" placeholder="Write Comment" required></textarea>
                                 </div>
-                                <button class="btn-anime v1 round-border-full text-capital">Send Message <i class="my-icon icon-arrow-top-right"></i>
+                                <button class="btn-anime v1 round-border-full text-capital" type="submit" >Send Message <i class="my-icon icon-arrow-top-right"></i>
                                 </button>
                                 <div class="response"></div>
                             </form>
@@ -390,6 +390,44 @@
     <script src="assets/js/plugins.js"></script>
     <!-- Index -->
     <script src="assets/js/index.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form default submission
+    
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+    
+            const emailBody = `
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Subject:</strong> ${subject}</p>
+                <p><strong>Message:</strong> ${message}</p>
+            `;
+    
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "shipchandlerkaliningrad@gmail.com",
+                Password: "28DEACF17EB4A326B6A4F3A07AE4B974BD34",
+                To: 'shipchandlerkaliningrad@gmail.com',
+                From: "shipchandlerkaliningrad@gmail.com",
+                Subject: "New Contact Form Submission",
+                Body: emailBody
+            }).then((message) => {
+                alert("Email sent successfully!");
+                document.getElementById('contact-form').reset(); // Clear form fields
+            }).catch((error) => {
+                console.error("Error sending email:", error);
+                alert("Failed to send email. Please try again.");
+            });
+        });
+    </script>
+    
 </body>
 
 
